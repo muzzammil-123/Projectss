@@ -1,0 +1,57 @@
+.flex{
+    display: flex;
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.upper-case{
+    text-transform: uppercase;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.semi-bolder{
+    font-weight:bolder ;
+}
+
+.c-black{
+    color: black;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+

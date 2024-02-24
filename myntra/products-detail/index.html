@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/myntra/utils.css">
+    <link rel="stylesheet" href="/myntra/products-detail/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="
+    data:image/png;base64,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" sizes="64x64">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="popup">
+        <p>You have this item in your bag with the maximum availability quantity</p>
+    </div>
+    <header class="container">
+        <nav class="flex space-between">
+            <div class="left item-center flex">
+                <img class="myntra-logo"
+                    src="https://th.bing.com/th/id/OIP.QWUAETWj7eqbEhMAqdNl2gHaFW?rs=1&pid=ImgDetMain" alt="">
+                <ul class="flex justify-center upper-case semi-bolder item-center">
+                    <a class="decoration-none c-black" href="/myntra/store/index.html">
+                        <li>Men</li>
+                    </a>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home & Living</li>
+                    <li>Beauty</li>
+                    <li>Studio <span class="span">New</span></li>
+                </ul>
+            </div>
+            <div class="right flex item-center">
+                <input type="text" placeholder="Search for products, brands and more" class="search">
+                <div class="profile mx-2 flex"><img src="/myntra/icons8-user-24.png" alt="">
+                    <div class="div">Profile</div>
+                </div>
+                <div class="profile mx-2 flex"><img class="wishlist" src="/myntra/icons8-heart-50.png" alt="">
+                    <div class="div">Wishlist</div>
+                </div>
+                <a class="decoration-none c-black" href="/myntra/cart/index.html" target="_blank">
+                    <div class="profile mx-2 flex"><img class="bag" src="/myntra/icons8-bag-50.png" alt="">
+                        <div class="div">Bag</div>
+                        <span class="badge"></span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="flex main flex-wrap">
+        <div class="section-1">
+            <div class="child">
+                <img src="" alt="" class="product-img-1">
+                <img style="height:541px;" src="" alt="" class="product-img-1">
+                <img src="" alt="" class="product-img-1">
+                <img src="" alt="" style="height: 542px;" class="product-img-1">
+                <img src="" alt="" class="product-img-1">
+                <img src="" style="height: 541px;" alt="" class="product-img-1">
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="childOfSection2">
+                <div class="product-title"></div>
+                <div class="product-description"></div>
+                <div class="rating-review"></div>
+                <hr>
+                <div class="price"></div>
+                <div class="taxex">inclusive of all taxes</div>
+                <div class="color-header">
+                    <p class="colors-heading"><strong>More Color</strong></p><a title="Navy Blue"
+                        data-refreshpage="true"
+                        href="/watches/daniel+klein/daniel-klein-premium-women-navy-dial-watch-dk11138-3/1620104/buy"><img
+                            draggable="false" class="colors-image"
+                            src="https://assets.myntassets.com/f_auto,h_150,q_auto:best,w_112/assets/images/1620104/2019/2/5/b616eb94-b268-49ce-9ef4-ff2b83c9eafe1549348791869-Daniel-Klein-Premium-Women-Navy-Dial-Watch-DK11138-3-5451549-1.jpg"
+                            style="background-color: rgb(159, 168, 171);"></a>
+                </div>
+            </div>
+            <div class="size">
+                <h1 class="size-heading">SELECT SIZE</h1>
+                <button class="size-btn">Onesize</button>
+            </div>
+            <div class="btn">
+                <button class="add-to-cart"><span>
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZdJREFUSEvtlsErBVEUxn9f2VG2VhKFHZIdYmFJ2UnK/2ChyEpZin9BsrBRStkowo6SlRJir2xsOd6tO5o3782be3uv3lu82c2dc7/fPd85M3NEky41iUs02Mw6gDFg3B/6HniQ9BOTRDDYzFzsBrAOdGcgX8C2pP1QeAz4EFgpEN6TtBYCDwKb2TJw5AU/ACd+7e9ngF2g19/PSboogoeCX4F+wFk6KOkzLWxmPSU3XoBO4FbSVN1gMxvwok5rS9JONVEzc+ubwK/rAUnfteCFGZvZJHDjReYlneWAF0rdfuqfTUhy3Z57hYBdDS+9wqykqxxwUFyytwxsZl3Ao69nUZlinr8BI2n7s2DXFEm3xgiHxE5LSkpW/uUys7RdB8A70AeseuVkrRqoWlx6raxM2Ywr6pQ5TFSNa+1tXXBI8fJi6sq4DY5xoG11+nNb+DrFWJuNbVvdklYPA0/11LXG3iFJz1X/x27RzE5K/+TFBsOPJS2lNSsmED8/uzFmFOIH/syB3fx1J+k8m0jh6NPgzP/lmgb+A6dr9R94xlBJAAAAAElFTkSuQmCC" /></span>
+                    <span class="cart-txt">ADD TO CART</span></button>
+                <button class="go-to-bag">
+                    <a href="/myntra/cart/index.html" class="decoration-none" style="color:white; font-size: larger;">GO TO BAG <box-icon
+                            class="arrow" name='right-arrow-alt' color='#ffffff'></box-icon></a></button>
+                <button class="buy-now"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAodJREFUSEvNlk2ITlEYx39jhppmSLHRLIwkU2iyYGNBRON70kSJWfjYsWAzZKvIRsmSjZlpUGjIjJrxkY2UhY+SkWJWsvBRLHzG+U/Pq9Nxz73vve+tceqt9577nOf3fJ9bxyStukni8l+D64GFQAPwDPgdidIUYDHwExgDfqVFM83j9Q52HFgCTDUl34CHwBHgge2tAE4Cy4FptvcDeAIcBUaTDEgCCyJFhzPyf9oMOpAhdwo4ZpH4K5oE7gd2msRH4Dxw0543AvuAmQHsJSBDXtj+IuAQMN+ee4Fu/0wI3uWEJaR1G9jkwvo1gDS6sA4Bq2x/BNiSINdkBq80uR3A5YouH6wiGgdagE9AG/AuEsZmi4Re7wW+ROTmWKFNB14BC5LAq81LvVN+FboyVo/VjHQtc1F8pD++xweBM0ZqB56WQbVqVydo7Qb6QrBa5IQJzAbelwSeC7wxXfuBcyF4j5e3dYCKpoy1zc2CK6ZIxTrRIX6oW4HXXqUKXsa6ax2goTIL+ByC9XwN6DSaenmgRrJyesF0nHXpUx1NrLCP5znwY2CGmzayUP15qyBcI/e6zfi3Nsc/xMDaXwMM2zgsCu8AbhhUl4Z03vcdiF0SOjhoQ/87sDWH52utgDTzZbjG7D+FmnY7+VYLrtDdyQi7D9VNtjnWHVkfAsqxWkF3sWa2rI/BQ6gMvxczNAusc9XAc0GTqjpmoOBXAV0koee5oXnAku1yN9bFAC5DNIlUSMppanirqeqY59ttqOj7Sp4r9/qp+DZ4t1tm61eT41CJPL8ECK6Vy9O0AZJprbvU9aWiUVhpM83jXKuIxxXAUvP2eS5iZFYX0VHoTC0eFwLWmuOaoDr8B/UffB90yxnWAAAAAElFTkSuQmCC" />
+                    <span class="cart-txt">WISHLIST</span></button>
+            </div>
+            <hr>
+            <div class="delivery-container">
+                <h4>DELIVERY OPTION <box-icon name='truck' type='solid' class="truck"></box-icon></h4>
+                <form autocomplete="off">
+                    <input type="text" placeholder="Enter pincode" class="pincode-code" value="" name="pincode">
+                    <input type="submit" class="pincode-check pincode-button" value="Check">
+                </form>
+                <p class="enter-pincode">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+            </div>
+            <div class="meta-container">
+                <div class="meta-info">
+                    <div class="meta-dec">100% Original Products</div>
+                </div>
+                <div class="meta-info">
+                    <div class="meta-dec">Pay on delivery might be available</div>
+                </div>
+                <div class="meta-info">
+                    <div class="meta-dec">Easy 14 days returns and exchanges</div>
+                </div>
+                <div class="meta-info">
+                    <div class="meta-dec">Try & Buy might be available</div>
+                </div>
+            </div>
+            <div class="offer-container">
+                <h4>BEST OFFER <box-icon name='purchase-tag-alt' color='#3d4151' class="truck"></box-icon></h4>
+                <div class="offer-title"><b>Best Price: </b> <span class="offer-price"> Rs. 1149</span></div>
+                <ul class="offer-desc">
+                    <li> Applicable on: Order above Rs. 999(only on first purchase)</li>
+                    <li>Coupon Code: <span class="code">MYNTRA200</span></li>
+                    <li>Coupon Discount: Rs. 200 off (check cart for final savings)</li>
+                </ul>
+                <a class="pdp-offers-linkButton decoration-none" target="_blank"
+                    href="https://www.myntra.com/online-fashion-store">View
+                    Eligible Products</a>
+            </div>
+            <div class="pdp-offers-extraOffer">
+                <div class="pdp-offers-offerLikeBestPrice">
+                    <div class="pdp-offers-offerTitle"><b>EMI option available</b></div>
+                    <div class="pdp-offers-offerDesc">
+                        <li class="pdp-offers-extraOfferDesc">
+                            <div class="pdp-offers-bullet"></div>
+                            <div class="pdp-offers-labelMarkup">EMI starting from Rs.63/month</div>
+                        </li>
+                    </div><span class="pdp-offers-linkButton">View Plan</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+    <div class="footer-par">
+        <footer class="footer-1">
+            <div class="footer-content">
+                <div class="dektop-generic-info">
+                    <div class="dektop-shopLinks">
+                        <p class="onlineShop-heading">ONLINE SHOPPING</p>
+                        <a href="" class="links un">Men</a>
+                        <a href="" class="links">Women</a>
+                        <a href="" class="links">Kids</a>
+                        <a href="" class="links">Home & Living</a>
+                        <a href="" class="links">Beauty</a>
+                        <a href="" class="links">Gift Cards</a>
+                        <a href="" class="links">Myntra Insider</a>
+                        <div class="desktop-usefullLink">
+                            <p class="onlineShop-heading un">USEFUL LINKS</p>
+                            <a href="" class="links">Blog</a>
+                            <a href="" class="links">Careers</a>
+                            <a href="" class="links">Site Map</a>
+                            <a href="" class="links">Corporate Information</a>
+                            <a href="" class="links">Whitehat</a>
+                        </div>
+                    </div>
+                    <div class="desktop-politics">
+                        <p class="onlineShop-heading">CUSTOMERS POLICIES</p>
+                        <a href="" class="links un">Contact Us</a>
+                        <a href="" class="links">FAQ</a>
+                        <a href="" class="links">T&C</a>
+                        <a href="" class="links">Terms Of Use</a>
+                        <a href="" class="links">Track Order</a>
+                        <a href="" class="links">Shipping</a>
+                        <a href="" class="links">Cancellation</a>
+                        <a href="" class="links">Returns</a>
+                        <a href="" class="links">Privacy Policy</a>
+                        <a href="" class="links">Grievance offer</a>
+                    </div>
+                    <div class="desktop-appExprience">
+                        <p class="onlineShop-heading">EXPRIENCE MYNTRA APP ON MOBILE</p>
+                        <div>
+                            <img width="232px"
+                                src="https://cdn.monkplatform.com/image/czozNDQ6Imh0dHBzJTNBJTJGJTJGODViMzU1NzlmNDgzZTM4YzVhNTMtMDBhMDZhNGY5YWIxNzdkOTEzYzFkOWEyYWU5MzNhMTguc3NsLmNmMi5yYWNrY2RuLmNvbSUyRnVwbG9hZGVkJTJGayUyRjBlMTMyMTY1NTZfMTYzNTM1NzI0OV9raXNzcG5nLWFidXMtdHZ2cjM2LTIxLXdpcmVsZXNzLTRjaGFubmVscy12aWRlby1zdXJ2ZWlsbGFuLXBlcmJhZGFuYW4tcGVuZ2FuZ2t1dGFuLWF3YW0tam9ob3ItcGFqLTViYTNlMmMyNjMyNTU0MjA0NjY1NTUxNTM3NDY3MDc0NDA2MS5wbmclM0ZxJTNEOTAlMjZ3JTNEMTg3JTI2aCUzRDY1JTI2Zml0JTNEbWF4JTI2cyUzRDM1OTBlOWNhMDFjYjQ2ZmU3NjcwMGY3NzVmZGM4YTAyIjs=/kisspng-abus-tvvr36-21-wireless-4channels-video-surveillan-perbadanan-pengangkutan-awam-johor-paj-5ba3e2c26325542046655515374670744061.png"
+                                alt="">
+                        </div>
+                        <div class="Keep-in-touch">
+                            <img src="/myntra/Web capture_21-1-2024_194130_www.myntra.com.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="dektop-trusted">
+                        <div class="desktop-section">
+                            <div class="ass">
+                                <img src="/myntra/100.jpeg" alt="">
+                            </div>
+                            <div><strong>100% ORIGNAL </strong>gurantee for all products at myntra.com</div>
+                        </div>
+                        <div class="desktop-section">
+                            <div class="ass">
+                                <img src="/myntra/return.jpeg" alt="">
+                            </div>
+                            <div><strong>RETURN WITHIN 30days </strong>of recieving your order</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/myntra/products-detail/index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>

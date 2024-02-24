@@ -1,0 +1,739 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url(/myntra/Helvetica.ttf);
+}
+
+html body{
+    /* height: 1000vh; */
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ring{
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bg{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+
+.aside-2-close{
+    background: #535766;
+    position: fixed;
+    right: 0px;
+    cursor: pointer;
+    bottom: 130px;
+    height: 288px;
+    z-index: 1000;
+    
+}
+
+
+.expanded-banner{
+    right: 575px;   
+    position: absolute;
+    /* width: 57px; */
+    z-index: 1000;
+}
+
+
+.arrow{
+    width: 0;
+    height: 0;
+    /* position: absolute; */
+    color: white;
+    margin: 24px 16px;
+    border-bottom: 12px solid transparent;
+    border-right: 14px solid #fff;
+    border-top: 12px solid transparent;
+}
+
+.expanded-arrow{
+    right: 575px;   
+    /* width: 57px; */
+    /* position: absolute; */
+    border-left: 14px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.collapse-arrow{
+    right: 575px;   
+    /* width: 57px; */
+    border-right: 14px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.text{
+    writing-mode: vertical-rl;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    width: 36px;
+    padding: 4px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 700;
+    transform: rotate(-179deg);
+}
+
+.ringcontainer{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+}
+#loading-spinner{
+    position: relative;
+    height: 100%;
+}
+
+.ring:nth-child(1){
+    border-bottom-width: 8px;
+    border-color: rgb(0, 247, 255);
+    animation: rotate1 2s linear infinite;
+}
+
+.ring:nth-child(2){
+    border-right-width: 8px;
+    border-color: rgb(255, 0, 255);
+    animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3){
+    border-top-width: 8px;
+    border-color: rgb(0, 255, 13);
+    animation: rotate3 2s linear infinite;
+}
+
+.loading{
+    color: white;
+}
+
+@keyframes rotate1 {
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+.myntra-logo{
+    width: 61px;
+    height: 42px;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 66px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px; */
+}
+nav{
+    font-size: 14px;
+    padding-top: 14px;
+    width: 90vw;
+
+}
+
+.container1{
+    padding: 0 5vw;
+    /* background-color: red; */
+    /* margin: 13px 0; */
+}
+
+li{
+    list-style: none;
+    padding: 0 16px;
+}
+
+.search{
+    width: 27vw;
+    padding:15px 17px;
+    background-color: #f7f8fd ;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.new{
+    color: #ff557c;
+    top: -.4rem;
+    font-size: 10px;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    text-transform: uppercase;
+}
+
+.home{
+    width: 99vw;
+    margin: -3px 0px;
+}
+.item{
+    width: 16.6vw;
+    margin: 6px -1px;
+}
+
+
+.profile{
+    flex-direction: column;
+    font-weight: bold;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: center;
+}
+.wishlist{
+    width: 20px;
+}
+.bag{
+    width: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sec-1{
+   width: 100%;
+}
+
+.timer{
+    background-image: linear-gradient(90deg,#f9f9ff,#dee8ff);
+    width: 100%;
+    height: 75px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.04);
+    text-align: center;
+}
+
+.timer .sales-txt{
+    margin: 0 auto;
+    color: #535766;
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    width: 334px;
+    line-height: 25px;
+}
+
+.sa{
+    line-height: 29px;
+}
+
+.timer .sales-txt .clock .day,
+.timer .sales-txt .clock .hours,
+.timer .sales-txt .clock .minute,
+.timer .sales-txt .clock .sec{
+    margin-left: 4px;
+    font-family: 'Assistant', sans-serif;
+    color: #ff3f6c;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Helvetica';
+}
+
+.day-text,
+.hour-txt,
+.minute-txt,
+.sec-txt{
+    font-size: 12px;
+    color: #535766;
+    text-transform: capitalize;
+}
+
+.colon{
+    color: #535766;
+    margin-left: 4px;
+}
+
+.sec-1 .search-text{
+    text-transform: capitalize;
+    font-weight: 800;
+    /* border: 1px solid; */
+    width: max-content;
+    font-size: 18px;
+    padding: 20px 30px;
+    font-family: 'Assistant', sans-serif;
+
+}
+
+.item-no{
+    color: #878b94;
+    font-weight: 100;
+}
+
+.aside-1{
+    /* background-color: black; */
+    width: 252px;
+    /* height: 1160px; */
+}
+
+.main-1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rating{
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+box-icon{
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+}
+
+.custom-card{
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.card-img-top{
+    width: 300px;
+    height: 300px;
+}
+
+.card-title{
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.card-text{
+    margin-top: 10px;
+}
+
+.price{
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cut-rate{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #7e818c;
+    font-weight: 100;
+    margin-left: 8px;
+}
+
+.off{
+    font-weight: 100;
+    font-size: 12px;
+    color: #ff905a;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+.bannerExpanded{
+    position: fixed;
+    bottom: 130px;
+    right: 0;
+    width: 576px;
+    height: 288px;
+    background-image: linear-gradient(270deg,#fef9e5,#fde3f3);
+    color: #3e4152;
+}
+
+.firstRow{
+    display: table;
+    table-layout:auto;
+    height:52%;
+    width: 100%;
+}
+
+.firstRowDescription{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 24px 0px 0px 40px;
+}
+
+.avail-text{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.t400{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.firstRowImg{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 24px 40px 0 0;
+}
+
+.roeImg{
+    width: 150px;
+    height: 120px;
+}
+
+.secondRow {
+    display: table;
+    table-layout: auto;
+    height: 32%;
+    width: 100%;
+}
+
+.coupon {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+}
+
+.secondRow-text{
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.secondRow-code{
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: text;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+.secondRow-footer{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.signup{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 40px;
+}
+
+.signupchild{
+width: 172px;
+height: 48px;
+border-radius: 4px;
+background-color: #ff3f6c;
+color: #fff;
+display: inline-block;
+vertical-align: middle;
+cursor: pointer;
+}
+.signup-text{
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    line-height: 48px;
+}
+
+.thirdRow{
+    display: table;
+    table-layout: auto;
+    border-top: 1px solid #d3d3d3;
+    height: 16%;
+    width: 100%;
+}
+
+.thirdRow-item{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.FreeShippingBanner-icon {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.txt{
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.vertical-flters-filters{
+padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #e9e9ed;
+    position: relative;
+    border-right: 1px solid #edebef;
+}
+
+.header-container{
+    position: relative;
+    border-right: none!important;
+    padding-top: 0;
+}
+.filterHeading{
+    font-weight: 700;
+}
+
+.genderList{
+    padding: 0;
+    margin: 0;
+}
+
+.gender-label{
+    cursor: pointer;
+    color: #282c3f;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.common-customRadio{
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.common-customRadio input{
+    margin: 0 16px 0 0;
+    /* visibility: hidden; */
+}
+
+.brand-container {
+    position: relative;
+}
+
+.vertical-filters-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 18px;
+    clear: both;
+    color: #282c3f;
+    display: block;
+}
+
+.vertical-flters-filters .vertical-filters-label {
+    display: block;
+    width: 95%;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 17px;
+    color: #282c3f;
+}
+
+.vertical-filters-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 18px;
+    clear: both;
+    color: #282c3f;
+    display: block;
+}
+
+.common-customCheckbox {
+    position: relative;
+    cursor: pointer;
+}
+
+.common-customCheckbox input {
+    margin: 0 16px 0 0;
+    visibility: hidden;
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.brand-list{
+    padding: 0;
+}
+
+.brand-num {
+    color: #94969f;
+    font-size: 11px;
+    margin-left: 4px;
+}
+
+.common-checkboxIndicator {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c3c2c9;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.common-checkboxIndicator:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    width: 8px;
+    height: 5px;
+    border-color: #fff;
+    border-style: none none solid solid;
+    border-width: 2px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.brand-more {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #ff3f6c;
+    margin-left: 27px;
+}
+
+.footer-par{
+    background-color: #Fafbfc;
+    padding: 30px 0px 40px 0px;
+    width: 100%;
+}
+
+.footer-1{
+    width: 980px;
+    margin: auto;
+}
+
+.footer-content{
+    width: 100%;
+}
+
+.dektop-generic-info{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 1006px;
+    /* height: 346px; */
+}
+
+.dektop-shopLinks, .desktop-politics{
+    display: flex;
+    margin-right: 70px;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    
+}
+
+.desktop-usefullLink .onlineShop-heading{
+    margin: 12px 0;
+}
+
+.desktop-appExprience{
+    padding: 13px 20px 0px 0px;
+}
+
+.desktop-appExprience .onlineShop-heading{
+    margin-top: -12px;
+}
+
+.links{
+    color: #696b79;
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.un{
+    margin-top: 8px;
+    padding-top: 14px;
+}
+
+.desktop-usefullLink{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.desktop-appExprience{
+    width: 363px;
+
+}
+
+.dektop-trusted{
+    width: 250px;
+}
+
+.dektop-trusted .desktop-section{
+    display: flex;
+}
+
+.onlineShop-heading{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Keep-in-touch{
+    margin-left: -19px;
+    margin-top: 24px;
+}
+
+strong{
+    color: black;
+}
+
+.desktop-section{
+    margin: 4px 0px 30px 0px;
+    color: #696b79;
+    width: 300px;
+}
+
+.ass{
+    margin-left: -10px;
+    margin-right: 10px;
+}
